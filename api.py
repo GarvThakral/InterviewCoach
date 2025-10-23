@@ -9,6 +9,7 @@ app = FastAPI()
 
 class ParseJD(BaseModel):
     job_description:str
+    experience:int
 
 @app.post("/parse_jd")
 def parse_jd(params:ParseJD)->JDResponse:
