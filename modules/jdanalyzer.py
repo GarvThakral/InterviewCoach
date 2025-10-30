@@ -4,7 +4,8 @@ from classes_types_dec.structured_outputs import JDResponse
 from langchain_core.prompts import PromptTemplate
 import json
 from typing import Dict
-
+from dotenv import loadenv
+loadenv()
 
 def jdExtractor(jd)->JDResponse:
 
